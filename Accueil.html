@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>jeu</title>
+	
+		<link rel="stylesheet" type="text/css"  href="style_accueil.css"/>
+  </head>
+  
+  
+<body>
+   <h1>Bienvenue sur notre jeu ! </h1>
+
+			<form method="POST" action="../controleur">
+				Identifiant : <input type="text" name="id"/> <br><br>		
+				Mot de passe: <input type="password" name="mdp"/><br></br>
+				<input type="hidden" name="operation" value="connexion"/>
+				<input type="submit" name="valider" value="connexion"/>
+	        </form> 
+			<a href="inscription.html"><input type="button" value="Inscription" /></a>
+		
+
+    </form>
+
+  <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  
+	<script>
+
+$(document).ready(function(){
+
+    $("#submit").click(function{
+
+        $.post(
+            'connexion.php', // Un script PHP que l'on va créer juste après
+            {
+                login : $("#username").val(),  // Nous récupérons la valeur de nos inputs que l'on fait passer à connexion.php
+                password : $("#password").val()
+            },
+
+            function(data){ // Cette fonction ne fait rien encore, nous la mettrons à jour plus tard
+            },
+
+            'text' // Nous souhaitons recevoir "Success" ou "Failed", donc on indique text !
+         );
+
+    });
+
+});
+
+</script>-->
+
+	</body>
+</html>

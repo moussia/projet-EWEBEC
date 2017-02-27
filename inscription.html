@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>TP : Un formulaire interactif</title>
+	<link rel="stylesheet" type="text/css"  href="style_accueil.css"/>
+	<script type="text/javascript" src="Accueil.js" ></script>
+	
+</head>
+  <body>
+
+    <form id="myForm">
+
+      <span class="form_col">Sexe :</span>
+      <label><input name="sex" type="radio" value="H" />Homme</label>
+      <label><input name="sex" type="radio" value="F" />Femme</label>
+      <span class="tooltip">Vous devez selectionnez votre sexe</span>
+      <br /><br />
+
+      <label class="form_col" for="lastName">Nom :</label>
+      <input name="lastName" id="lastName" type="text" />
+      <span class="tooltip">Un nom ne peut pas faire moins de 2 caracteres</span>
+      <br /><br />
+
+      <label class="form_col" for="firstName">Prenom :</label>
+      <input name="firstName" id="firstName" type="text" />
+
+      <span class="tooltip">Un prenom ne peut pas faire moins de 2 caracteres</span>
+      <br /><br />
+
+      <label class="form_col" for="login">Pseudo :</label>
+      <input name="login" id="login" type="text" />
+      <span class="tooltip">Le pseudo ne peut pas faire moins de 4 caracteres</span>
+      <br /><br />
+
+      <label class="form_col" for="pwd1">Mot de passe :</label>
+      <input name="pwd1" id="pwd1" type="password" />
+      <span class="tooltip">Le mot de passe ne doit pas faire moins de 6 caracteres</span>
+
+      <br /><br />
+
+      <label class="form_col" for="pwd2">Mot de passe (confirmation) :</label>
+      <input name="pwd2" id="pwd2" type="password" />
+      <span class="tooltip">Le mot de passe de confirmation doit etre identique a celui d'origine</span>
+      <br /><br />
+
+      <label class="form_col" for="country">Pays :</label>
+
+      <select name="country" id="country">
+        <option value="none">Selectionnez votre pays de residence</option>
+		<option value="us">Etats-Unis</option>
+        <option value="fr">France</option>
+		<option value="is">Israel</option>
+      </select>
+      <span class="tooltip">Vous devez selectionner votre pays de residence</span>
+
+      <br /><br />
+
+
+      <span class="form_col"></span>
+      <input type="submit" value="M'inscrire" /> <input type="reset" value="Reinitialiser le formulaire" /> <input type="button" value="Enregistrer" />
+	  	<a href="Accueil.html"><input type="button" value="Retour" /></a>
+    </form>
+
+  </body>
+</html>
